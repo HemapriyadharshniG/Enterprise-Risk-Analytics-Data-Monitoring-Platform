@@ -57,16 +57,77 @@ This architecture mirrors a typical consulting data pipeline used in Data & Anal
 
 🧱 Database Design
 
-A single consolidated analytics table was designed to support efficient querying and reporting:
+The database was designed using a single consolidated analytics table to support efficient querying and reporting on operational and risk data. Since the dataset was already preprocessed and cleaned, a denormalized structure was intentionally chosen to simplify analytics and reduce join complexity.
 
-Table Name: preprocessed_enterprise_data
+Table Name: risk_analytics
 
-Key design considerations:
-	•	Composite primary key for data integrity
-	•	Constraints for data validation
-	•	Analytics-friendly schema
-	•	Governance and risk-readiness
+Design Rationale:
+	•	Supports analytics-ready querying without additional joins
+	•	Suitable for reporting, dashboards, and risk analysis
+	•	Aligns with Data & Analytics consulting use cases
+	•	Ensures data integrity and governance through constraints
 
+⸻
+
+Schema Overview
+
+The table captures operational metrics, risk attributes, and derived indicators such as error rates and risk flags.
+
+Key Attributes Include:
+	•	Department identifiers and names
+	•	Date and month for time-based analysis
+	•	Operational metrics (transactions, errors, delays)
+	•	Risk event details and severity information
+	•	Derived risk indicators (severity score, high-risk flag)
+
+⸻
+
+Keys & Constraints
+	•	Composite Primary Key: Ensures record-level uniqueness across department, date, and risk event.
+	•	Validation Constraints: Applied on numeric and categorical fields to maintain data quality.
+	•	Risk Flags: Binary indicators (0/1) to support filtering of high-risk scenarios.
+
+These controls support Technology Risk and data governance standards.
+
+⸻
+
+Data Ingestion Strategy
+
+Data was ingested using MySQL Workbench – Table Data Import Wizard, which is optimized for bulk loading of structured CSV files.
+
+Ingestion Steps:
+	1.	Selected the preprocessed CSV file as the data source
+	2.	Mapped CSV columns to the database schema
+	3.	Performed bulk data load into the risk_analytics table
+	4.	Verified successful ingestion through record count and data validation queries
+
+⸻
+
+Data Volume
+	•	Total Records Loaded: 91,626+
+	•	Format: CSV
+	•	Load Type: Bulk import
+
+The import completed successfully and was validated for accuracy and completeness.
+
+⸻
+
+Post-Load Validation
+
+After ingestion, validation checks were performed to ensure:
+	•	Correct total record count
+	•	Successful enforcement of primary keys and constraints
+	•	Accuracy of derived metrics such as error rate and risk flags
+
+This step aligns with the testing and validation phase of the SDLC.
+
+⸻
+
+Why This Design Works for Consulting
+	•	Mirrors real-world enterprise analytics models
+	•	Supports Data & Analytics and Technology Risk engagements
+	•	Scales for larger datasets
+	•	Enables faster insights for business stakeholders
 ⸻
 
 🔄 Software Development Life Cycle (SDLC)
