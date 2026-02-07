@@ -1,3 +1,4 @@
+CREATE DATABASE PROJECT1;
 USE PROJECT1;
 CREATE TABLE preprocessed_enterprise_data (
     dept_id           INT NOT NULL,
