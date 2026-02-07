@@ -42,7 +42,8 @@ The final dataset is a preprocessed and cleaned CSV file containing 91,626 enter
 
 ⸻
 
-🏗️ Solution Architecture
+🏗️ SOLUTION ARCHITECTURE
+
 Preprocessed CSV Data
         ↓
 MySQL Workbench
@@ -173,7 +174,7 @@ These insights reflect real client-facing analytics use cases.
 
 ⸻
 
-🔧 Tech Stack
+🔧 TECH STACK
 •	Database: MySQL
 •	Query Language: SQL
 •	Tools: MySQL Workbench, Tableau
@@ -188,7 +189,7 @@ These insights reflect real client-facing analytics use cases.
 
 ⸻
 
-🧠 Key Learnings
+🧠 KEY LEARNINGS
 	•	Applying SDLC to data and analytics projects
 	•	Designing analytics-ready enterprise schemas
 	•	Handling large-scale data ingestion efficiently
