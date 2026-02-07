@@ -174,17 +174,17 @@ These insights reflect real client-facing analytics use cases.
 ⸻
 
 🔧 Tech Stack
-	•	Database: MySQL
-	•	Query Language: SQL
-	•	Tools: MySQL Workbench, Tableau
-	•	Data Format: CSV
-	•	Concepts:
-	•	Data Engineering
-	•	Data Analytics
-	•	SDLC
-	•	Information Management
-	•	Technology Risk
-	•	Data Quality & Governance
+•	Database: MySQL
+•	Query Language: SQL
+•	Tools: MySQL Workbench, Tableau
+•	Data Format: CSV
+•	Concepts:
+•	Data Engineering
+•	Data Analytics
+•	SDLC
+•	Information Management
+•	Technology Risk
+•	Data Quality & Governance
 
 ⸻
 
