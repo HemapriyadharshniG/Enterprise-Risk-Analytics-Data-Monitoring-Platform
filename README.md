@@ -59,7 +59,7 @@ This architecture mirrors a typical consulting data pipeline used in Data & Anal
 
 A single consolidated analytics table was designed to support efficient querying and reporting:
 
-Table Name: risk_analytics
+Table Name: preprocessed_enterprise_data
 
 Key design considerations:
 	•	Composite primary key for data integrity
@@ -115,7 +115,7 @@ These insights reflect real client-facing analytics use cases.
 🔧 Tech Stack
 	•	Database: MySQL
 	•	Query Language: SQL
-	•	Tools: MySQL Workbench
+	•	Tools: MySQL Workbench, Tableau
 	•	Data Format: CSV
 	•	Concepts:
 	•	Data Engineering
