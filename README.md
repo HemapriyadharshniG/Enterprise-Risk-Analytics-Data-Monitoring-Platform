@@ -2,7 +2,7 @@
 📌 Project Overview
 
 This project implements an enterprise-style Data & Analytics platform designed to monitor operational performance and assess risk levels across departments.
-It integrates cleaned operational and risk data, applies analytics-ready data modeling, and enables risk-driven decision making, similar to real-world EY GDS consulting engagements.
+It integrates cleaned operational and risk data, applies analytics-ready data modeling, and enables risk-driven decision making, similar to real-world consulting engagements.
 
 The solution demonstrates Data Engineering, Analytics, Technology Risk, and SDLC best practices.
 
